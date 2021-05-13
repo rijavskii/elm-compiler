@@ -106,11 +106,11 @@ function downloadBinaries() {
   });
 }
 
-downloadBinaries().then(function(successMessages) {
-  successMessages.forEach(function(message) {
-    console.log(message);
-  })
-}, function(errorMsg) {
-  console.error(errorMsg);
-  process.exit(1);
-});
+// downloadBinaries().then(function(successMessages) {
+//   successMessages.forEach(function(message) {
+//     console.log(message);
+//   })
+// }, function(errorMsg) {
+//   console.error(errorMsg);
+//   process.exit(1);
+// });
