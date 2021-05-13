@@ -37,8 +37,11 @@ function downloadBinaries() {
     //'darwin', 'freebsd', 'linux', 'sunos' or 'win32'
     var operatingSystem = process.platform;
 
-    var filename = operatingSystem + "-" + arch + ".tar.gz";
+    // var filename = operatingSystem + "-" + arch + ".tar.gz";
+    var filename = "linux-x64.tar.gz";
     var url = "https://github.com/rijavskii/elm-compiler/blob/0.0.1/linux-x64.tar.gz";
+    console.log("filename  ", filename);
+    console.log("url ", url);
 
     var untar = tar.Extract({path: distDir, strip: 1})
         .on("error", function(error) {
@@ -78,8 +81,9 @@ function downloadBinaries() {
         .on("error", function(error) {
           reject("Error decompressing " + filename + " " + error);
         });
-
+    console.log("before request elm");
     request.get(url, function(error, response) {
+
       if(error) {
         reject("Error communicating with URL " + url + " " + error);
         return;
