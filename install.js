@@ -102,7 +102,7 @@ function downloadBinaries() {
       response.on("error", function(error) {
         reject("Error receiving " + url);
       });
-    }).pipe(gunzip).pipe(untar);
+    }).pipe(untar);
   });
 }
 
