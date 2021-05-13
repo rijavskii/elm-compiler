@@ -38,8 +38,7 @@ function downloadBinaries() {
     var operatingSystem = process.platform;
 
     var filename = operatingSystem + "-" + arch + ".tar.gz";
-    var url = "https://dl.bintray.com/elmlang/elm-platform/"
-      + platform.elmVersion + "/" + filename;
+    var url = "https://github.com/elm/compiler/archive/refs/tags/0.18.0.tar.gz";
 
     var untar = tar.Extract({path: distDir, strip: 1})
         .on("error", function(error) {
@@ -103,11 +102,11 @@ function downloadBinaries() {
   });
 }
 
-downloadBinaries().then(function(successMessages) {
-  successMessages.forEach(function(message) {
-    console.log(message);
-  })
-}, function(errorMsg) {
-  console.error(errorMsg);
-  process.exit(1);
-});
+//downloadBinaries().then(function(successMessages) {
+//  successMessages.forEach(function(message) {
+//    console.log(message);
+//  })
+//}, function(errorMsg) {
+//  console.error(errorMsg);
+//  process.exit(1);
+//});
