@@ -38,7 +38,7 @@ function downloadBinaries() {
     var operatingSystem = process.platform;
 
     var filename = operatingSystem + "-" + arch + ".tar.gz";
-    var url = "https://github.com/rijavskii/elm-compiler/blob/0.0.1/elm_bin.tar.gz";
+    var url = "https://github.com/rijavskii/elm-compiler/blob/0.0.1/linux-x64.tar.gz";
 
     var untar = tar.Extract({path: distDir, strip: 1})
         .on("error", function(error) {
