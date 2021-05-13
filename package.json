@@ -33,9 +33,6 @@
     "elm-reactor": "binwrappers/elm-reactor",
     "elm-repl": "binwrappers/elm-repl"
   },
-  "directories": {
-    "Elm-Platform": "Elm-Platform"
-  },
   "bugs": {
     "url": "https://github.com/elm-lang/elm-platform/issues"
   },
@@ -56,7 +53,8 @@
     "platform.js",
     "binaries.json",
     "binwrap.js",
-    "binwrappers"
+    "binwrappers",
+    "Elm-Platform"
   ],
   "homepage": "https://github.com/elm-lang/elm-platform/tree/master/installers/npm",
   "keywords": [
