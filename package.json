@@ -21,7 +21,6 @@
   "_resolved": "https://registry.npmjs.org/elm/-/elm-0.18.0.tgz",
   "_shasum": "919b8309cd939dfe2ff9d252d961b6c89509b970",
   "_spec": "elm@0.18.0",
-  "_where": "/var/www/elixir/calltrack_admin/assets",
   "author": {
     "name": "Richard Feldman",
     "email": "richard.t.feldman@gmail.com",
@@ -33,6 +32,9 @@
     "elm-package": "binwrappers/elm-package",
     "elm-reactor": "binwrappers/elm-reactor",
     "elm-repl": "binwrappers/elm-repl"
+  },
+  "directories": {
+    "Elm-Platform": "Elm-Platform"
   },
   "bugs": {
     "url": "https://github.com/elm-lang/elm-platform/issues"
